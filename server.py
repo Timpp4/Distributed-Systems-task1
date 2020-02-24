@@ -30,7 +30,6 @@ while True:
     print("Received from " + "(" + str(address[0]) + ":" + str(address[1]) + "): " + data.decode('utf-8'))
     if data:
         print("Sending data back to the client")
-        #connection.sendall(nick.encode('utf-8'))
         connection.sendall(data)
 
 print("Closing the socket...")
